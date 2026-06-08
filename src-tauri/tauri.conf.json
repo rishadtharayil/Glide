@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "PDFReader",
+  "productName": "Glide",
   "version": "0.1.0",
-  "identifier": "com.pdfreader.app",
+  "identifier": "com.glide.app",
   "build": {
     "frontendDist": "../dist",
     "devUrl": "http://localhost:1420",
@@ -13,7 +13,7 @@
     "windows": [
       {
         "label": "main",
-        "title": "PDF Reader",
+        "title": "Glide",
         "width": 1100,
         "height": 800,
         "minWidth": 600,

@@ -167,6 +167,18 @@ A living development log documenting architectural choices, milestone completion
   * Configured steps for Node.js setup, pnpm cache, TypeScript compilation check (`tsc --noEmit`), Rust environment, Cargo cache, and Rust compilation check (`cargo check`).
   * Added `tauri-apps/tauri-action@v0` to build the Tauri binaries and automatically draft a release draft on tag push (`v*`).
 
+### Entry 15: Logo Integration & Full Crate Renaming to "Glide"
+* **Date**: June 8, 2026
+* **Objective**: Configure the user's provided logo for the Tauri app, and rename all configurations/titles to "Glide".
+* **Actions**:
+  * Generated all required multi-platform Tauri icons (ico, icns, png formats) using Tauri CLI (`pnpm tauri icon`) from the uploaded JPEG logo.
+  * Renamed `productName` and `title` to "Glide" and updated `identifier` to `com.glide.app` in `tauri.conf.json`.
+  * Updated package name to `glide` and lib crate name to `glide_lib` in `Cargo.toml`.
+  * Modified Rust entrypoint `main.rs` to call `glide_lib::run()` instead of `tauri_app_lib::run()`.
+  * Renamed the project package name in `package.json` to `glide`.
+  * Updated `App.tsx` window title logic and sidebar heading to use "Glide".
+  * Updated HTML document title to "Glide" in `index.html`.
+
 ---
 
 ## 🛠️ Technical Decisions Summary

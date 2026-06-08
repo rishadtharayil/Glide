@@ -38,7 +38,7 @@ function App() {
   // Helper to update native OS window title
   const updateTitle = useCallback(async (tabName: string) => {
     try {
-      const title = tabName === "New Tab" ? "PDF Reader" : `PDF Reader - ${tabName}`;
+      const title = tabName === "New Tab" ? "Glide" : `Glide - ${tabName}`;
       await getCurrentWebviewWindow().setTitle(title);
     } catch (err) {
       console.error("Failed to set window title:", err);
@@ -304,7 +304,7 @@ function App() {
       {/* ── Sidebar ─────────────────────────────────────────── */}
       <div className={`sidebar ${isSidebarOpen ? "" : "closed"}`}>
         <div className="sidebar-header">
-          <div className="app-title">PDF Reader</div>
+          <div className="app-title">Glide</div>
           <button
             className="btn-open-sidebar"
             onClick={openFile}
