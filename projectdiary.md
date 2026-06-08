@@ -159,6 +159,14 @@ A living development log documenting architectural choices, milestone completion
   * Rewrote `README.md` to remove superlatives (e.g., "butter-smooth", "aggressive GPU memory optimizations", etc.).
   * Documented features, setup steps, and project architecture in a straightforward, objective style.
 
+### Entry 14: GitHub Actions CI & Release Workflow Setup
+* **Date**: June 8, 2026
+* **Objective**: Set up automation for CI verification and release building on tag push.
+* **Actions**:
+  * Created `.github/workflows/ci-release.yml` with support for Windows builds.
+  * Configured steps for Node.js setup, pnpm cache, TypeScript compilation check (`tsc --noEmit`), Rust environment, Cargo cache, and Rust compilation check (`cargo check`).
+  * Added `tauri-apps/tauri-action@v0` to build the Tauri binaries and automatically draft a release draft on tag push (`v*`).
+
 ---
 
 ## 🛠️ Technical Decisions Summary
