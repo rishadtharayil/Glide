@@ -143,6 +143,22 @@ A living development log documenting architectural choices, milestone completion
   * Set physical `canvas.width` and `canvas.height` directly to the viewport's own `width` and `height` properties.
   * This guarantees a 1:1 physical pixel matching between PDF.js's drawing bounds and the canvas's back-buffer pixel grid, eliminating slight aspect ratio rounding mismatches (which previously squished coordinates by 1-2 pixels) and achieving perfect subpixel rendering clarity identical to native readers.
 
+### Entry 12: Git Repository & GitHub Remote Setup
+* **Date**: June 8, 2026
+* **Objective**: Establish version control and push the codebase to GitHub.
+* **Actions**:
+  * Initialized local git repository (`git init`) and checked out branch `main`.
+  * Verified `.gitignore` setups: ignored `/target/` (Rust cargo build output) and `/gen/schemas/` (Tauri auto-completion artifacts) inside `src-tauri/.gitignore`, and ignored `node_modules` and `dist` inside root `.gitignore`.
+  * Staged all project files and created the initial commit.
+  * Configured remote origin `https://github.com/rishadtharayil/Glide.git` and successfully pushed the codebase to GitHub.
+
+### Entry 13: Simplified README.md
+* **Date**: June 8, 2026
+* **Objective**: Remove overhyped/marketing language from `README.md` and keep it clear, simple, and factual.
+* **Actions**:
+  * Rewrote `README.md` to remove superlatives (e.g., "butter-smooth", "aggressive GPU memory optimizations", etc.).
+  * Documented features, setup steps, and project architecture in a straightforward, objective style.
+
 ---
 
 ## 🛠️ Technical Decisions Summary
