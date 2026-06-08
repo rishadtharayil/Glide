@@ -1,5 +1,7 @@
 # Glide PDF Reader
 
+I wanted to build a PDF reader that has a small resource footprint while having a smooth scrolling experience. At the current state, it's mainly empty now, but I'm planning to slowly add features if I have time.
+
 A lightweight, dark-themed PDF reader for Windows built with Tauri v2, React, TypeScript, and PDF.js.
 
 ## Features
