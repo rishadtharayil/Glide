@@ -179,6 +179,13 @@ A living development log documenting architectural choices, milestone completion
   * Updated `App.tsx` window title logic and sidebar heading to use "Glide".
   * Updated HTML document title to "Glide" in `index.html`.
 
+### Entry 16: Close Button Layout Refinement
+* **Date**: June 8, 2026
+* **Objective**: Remove the visual gap on the top and right of the close button to make it completely flush with the window edges.
+* **Actions**:
+  * Modified `.tab-bar` padding in `src/styles/viewer.css` from `padding: 4px 8px 0;` to `padding: 0 0 0 8px;`.
+  * This removes top/right padding on the tab bar, letting the `.window-controls` stretch to the very top and right edges of the window, making the buttons flush.
+
 ---
 
 ## 🛠️ Technical Decisions Summary

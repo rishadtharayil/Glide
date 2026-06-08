@@ -63,7 +63,7 @@ body {
   display: flex;
   align-items: flex-end;
   background: #090909;
-  padding: 4px 8px 0;
+  padding: 0 0 0 8px;
   height: 38px;
   border-bottom: 1px solid var(--border);
   flex-shrink: 0;
